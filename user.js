@@ -1,14 +1,19 @@
 
-const { userRouter } = require("express");
+const express = require("express");
+const userRouter = express.Router();
 
 userRouter.post('/login', (req, res) => {
-  res.send('Hello World!')
+   res.json({
+        message: "User login"
+    })
 })
 
 userRouter.post('/signup', (req, res) => {
-    res.send('Hello World!')
+     res.json({
+        message: "User SignUp"
+    })
   })
 
 module.exports = {
-    userRouter
+    userRouter : userRouter
 }

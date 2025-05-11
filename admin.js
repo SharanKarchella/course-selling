@@ -1,21 +1,30 @@
 
-const { adminRouter } = require("express");
+const express = require("express");
+const adminRouter = express.Router();
 
 //Admin
 adminRouter.post("/login", (req, res) => {
-  res.send("Admin");
+   res.json({
+        message: "Admin"
+    })
 });
 
 adminRouter.post("/signup", (req, res) => {
-  res.send("Admin");
+   res.json({
+        message: "Admin"
+    })
 });
 
 adminRouter.get("/course/create", (req, res) => {
-  res.send("Admin");
+   res.json({
+        message: "Admin"
+    })
 });
 
 adminRouter.get("/delete/course", (req, res) => {
-  res.send("Admin");
+   res.json({
+        message: "Admin"
+    })
 });
 
 

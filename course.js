@@ -1,12 +1,17 @@
 
-const { courseRouter } = require("express");
+const express = require("express");
+const courseRouter = express.Router();
 
 courseRouter.get('/purchase', (req, res) => {
-  res.send('Purchasing COurse')
+  res.json({
+    message: 'Purchasing Course'
+  })
 })
 
-courseRouter.get('/courses', (req, res) => {
-    res.send('Courses purchases')
+courseRouter.get('/preview', (req, res) => {
+    res.json({
+    message: 'Preview Courses'
+  })
   })
 
 module.exports = {

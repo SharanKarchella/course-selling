@@ -7,9 +7,9 @@ const app = express()
 const port = 3000
 
 
-app.use("/user",userRouter);
-app.use("/admin", adminRouter);
-app.use("/course", courseRouter);
+app.use("/api/v1/user", userRouter);
+app.use("/api/v1/admin", adminRouter);
+app.use("/api/v1/course", courseRouter);
 
 
 app.listen(port, () => {
