@@ -5,7 +5,7 @@ const ObjectId = mongoose.Types.ObjectId;
 
 console.log("connected to---Fucker");
 
-mongoose.connect("mongodb://localhost:27017/coursera-app");
+
 
 
 const userSchema = new Schema({
