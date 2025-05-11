@@ -19,6 +19,6 @@ adminRouter.get("/delete/course", (req, res) => {
 });
 
 
-module.exports ={
+module.exports = {
     adminRouter: adminRouter
 }
