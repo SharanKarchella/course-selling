@@ -1,6 +1,7 @@
 
 const express = require("express");
 const adminRouter = express.Router();
+const { adminModel } = require("../db");
 
 //Admin
 adminRouter.post("/login", (req, res) => {
@@ -15,13 +16,13 @@ adminRouter.post("/signup", (req, res) => {
     })
 });
 
-adminRouter.get("/course/create", (req, res) => {
+adminRouter.get("/create", (req, res) => {
    res.json({
         message: "Admin"
     })
 });
 
-adminRouter.get("/delete/course", (req, res) => {
+adminRouter.get("/delete", (req, res) => {
    res.json({
         message: "Admin"
     })

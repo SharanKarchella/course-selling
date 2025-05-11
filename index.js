@@ -1,8 +1,8 @@
 
 const express = require('express');
-const { userRouter } = require('./user');
-const { adminRouter } = require('./admin');
-const { courseRouter } = require('./course');
+const { userRouter } = require('./routes/user');
+const { adminRouter } = require('./routes/admin');
+const { courseRouter } = require('./routes/course');
 const app = express()
 const port = 3000
 
