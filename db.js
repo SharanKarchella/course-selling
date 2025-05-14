@@ -1,12 +1,8 @@
 const { default: mongoose } = require("mongoose");
-const admin = require("./routes/admin");
 const Schema = mongoose.Schema;
 const ObjectId = mongoose.Types.ObjectId;
 
-console.log("connected to---Fucker");
-
-
-
+console.log("connected to ---Fucker");
 
 const userSchema = new Schema({
     email: { type: String, unique: true },
@@ -14,6 +10,7 @@ const userSchema = new Schema({
     firstName: String,
     lastName: String,
 });
+
 
 const adminSchema = new Schema({
     email: { type: String, unique: true },
@@ -41,7 +38,7 @@ const adminModel = mongoose.model("admin", adminSchema );
 const courseModel = mongoose.model("course", courseSchema);
 const purchaseModel = mongoose.model("purchase", purchaseSchema)
 
-module.export = {
+module.exports = {
     userModel,
     adminModel,
     courseModel,
